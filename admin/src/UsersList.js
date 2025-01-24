@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 const UsersList = () => {
   const [users, setUsers] = useState([]);
 
-  // Define fetchData function
   const fetchData = () => {
     fetch('http://127.0.0.1:5000/api/users')
       .then((response) => response.json())
@@ -16,10 +15,9 @@ const UsersList = () => {
   };
 
   useEffect(() => {
-    fetchData(); // Fetch data immediately
-    const interval = setInterval(fetchData, 5000); // Fetch data every 5 seconds
+    fetchData();
+    const interval = setInterval(fetchData, 5000);
 
-    // Cleanup interval on component unmount
     return () => clearInterval(interval);
   }, []);
 
