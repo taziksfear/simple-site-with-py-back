@@ -9,7 +9,7 @@ import json
 import os
 
 # Replace with your bot token
-API_TOKEN = '7931398646:AAGVn0HCbUGtK1hX6VptUIpeK8cWjmd7sds'
+API_TOKEN = ''
 BACKEND_URL = 'http://127.0.0.1:5000/api/users'  # Flask backend URL
 JSON_FILE = 'users.json'  # Path to the JSON file
 
